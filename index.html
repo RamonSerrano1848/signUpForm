@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .left-side{
+            position: relative;
+        }
+        .odin_logo{
+            width: 90px;
+            position: absolute;
+            left: 80px;
+            top: 20px;
+        }
+        .odin_font{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 102px;
+            font-weight: 700;
+            left: 180px;
+            top: 40px;
+            color: white;
+            position: absolute;
+            font-family: Norse-Bold, Courier, monospace;
+        }
+        .logo_container{
+            z-index: 2;
+            height: 150px;
+            width: 500px;
+            display: block;
+            position: absolute;
+            top: 200px;
+            max-width: 498px;
+            background: rgb(0 0 0 / 50%);
+        }
+        body{
+            max-width: 80%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        input{
+            width: 200px;
+            margin-bottom: 20px;
+            border: 1px rgb(195, 195, 195) solid;
+        }
+        input:focus{
+            outline: none;
+            border: 2px solid hsl(224, 61%, 52%);
+            box-shadow: 1px 2px 6px hsla(0, 0%, 0%, 0.523);
+        }
+        input:invalid{
+            border: 1px solid red;
+        }
+        label{
+            font-size: 11px;
+            font-weight: bold;
+            color: rgb(44, 44, 44);
+            text-transform: uppercase;
+            display: block;
+        }
+        button{
+            padding: 10px 40px;
+            margin-bottom: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            background-color: green;
+            border-radius: 5px;
+            border-style: none;
+            cursor: pointer;
+            
+        }
+        img{
+            max-width: 500px;
+        }
+        .form-container{
+            margin: 40px 0px;
+            padding:40px;
+            box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+            border: 1px rgb(222, 222, 222) solid;
+
+        }
+        .form-content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px 60px;
+        }
+
+
+        @font-face {
+            font-family: Norse-Bold;
+            src: url('Norse-Bold.otf');
+        }
+
+    </style>
+
+
+    <div class="left-side">
+        <div class="logo_container">
+            <img src="images/odin-lined.png" alt="odin-logo" class="odin_logo">
+            <div class="odin_font">ODIN</div>
+        </div>
+        <img class="forest-image" src="images/photo-1585202900225-6d3ac20a6962.webp" alt="">
+    </div>
+
+
+    <div class="right-side">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam vel, reprehenderit rerum quae doloribus
+            dignissimos! Qui minima ducimus laborum assumenda est, atque, ipsum labore harum recusandae at veritatis officia
+            esse.
+        </h2>
+    <div class="form-container">
+        <form class="form-content">
+            <div>
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" placeholder="First Name">
+            </div>
+            <div>
+                <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" placeholder="Last Name">
+            </div>
+            <div>
+                <label for="E-Mail">E-Mail</label>
+            <input type="email" name="E-Mail" placeholder="E-Mail">
+            </div>
+            <div>
+                <label for="phone_number">Phone Number</label>
+            <input type="text" name="phone_number" placeholder="Phone Number">
+            </div>
+            <div>
+                <label for="password" required>*Password</label>
+            <input type="password" name="password" placeholder="Password">
+            </div>
+            <div>
+                <label for="password_validation" required>*Confirm Password</label>
+                <input type="password" name="password_validation" placeholder="Confirm Password">
+            </div>
+        </form>
+        <div style="font-size: 11px; font-weight: bold">*required</div>
+    </div>
+    <button>Create Account</button>
+    <div>Already have an account? <span style="color: green; font-weight: bold">Log in</span></div>
+</div>
+
+</body>
+
+</html>
